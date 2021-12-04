@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Test from "./Components/Test.js";
+import NavBar from "./Components/NavBar.js";
+import Banner from "./Components/Banner.js"
+
+
+import About from './Pages/About.js';
+import Reps from './Pages/Reps.js';
+import Senators from './Pages/Senators.js';
+import ErrorPage from './Pages/ErrorPage.js';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+//localhost:3000/products
+//my-page.com/
+//https://www.youtube.com/watch?v=zEQiNFAwDGo&t=123s&ab_channel=Academind
+
+    return ( 
+        <div>
+            <Banner />
+            <NavBar />
+            
+            
+
+        </div>
+      
   );
 }
 

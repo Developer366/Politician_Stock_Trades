@@ -1,0 +1,14 @@
+.Profile {
+    background-color:cornflowerblue;
+    height: auto;
+    width: 50%;
+}
+
+.Trades {
+   /* display: none;*/
+}
+
+.ProImg {
+    max-width: 100%;
+    max-height: 100%;
+}

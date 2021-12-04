@@ -1,0 +1,71 @@
+<a href="/">About</a>
+<a href="/representatives">Representatives</a>
+<a href="/senators">Senators</a>
+
+
+
+
+
+import { useState, useEffect } from 'react';
+
+import classes from "./Profile.module.css";
+
+
+
+const url =
+"https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.json";
+
+//template for a politician profile
+function Profile (props) {
+    const [isLoading, setIsLoading] = useState(false);
+
+    async function getData(name) {
+        //fetch api and save it as json
+        const response = await fetch(url);
+        const data = await response.json()
+        console.log(data)
+        //console.log(data[0].ticker)
+        //get matches to representative Nancy Pelosi
+        let matches = data.filter(rep => rep.representative == name);
+        console.log(matches)
+        matches.forEach((match) => {
+            console.log(match.ticker)
+            //create a element then add text to new element
+            var para = document.createElement("P");//creates a paragraph element
+            let text = `${match.ticker}, ${match.amount}, ${match.transaction_date}, ${match.asset_description}, ${match.type}`;
+            //para.innerHTML+= match.ticker;
+            //para.innerHTML+= match.amount;
+            para.innerHTML= text;
+            //para.innerHTML+= "ASSTITTIES ASS AND TITTIES"
+            document.getElementById('trans').appendChild(para);
+        });
+        //document.getElementById('trans').innerText = matches[1].ticker;
+        //return matches;
+    }
+
+
+    return (
+    <div>
+        <div className={classes.Profile}>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Official_photo_of_Speaker_Nancy_Pelosi_in_2019.jpg/330px-Official_photo_of_Speaker_Nancy_Pelosi_in_2019.jpg"
+                alt=""/>
+            <h1>{props.name}</h1>
+            <p>Age: {props.age}</p>
+            <p>Party: {props.party}</p>
+            <p>Job: {props.position}</p>
+            <p>Time in office: {props.time}</p>
+            <p>Salary: {props.salary}</p>
+            <p>Net Worth: {props.networth}</p>
+            <button onClick="getData('Hon. Nancy Pelosi')">View Transactions</button>
+        </div>
+
+        <div class="Card">
+            <h1>Nancy Pelosi Transactions</h1>
+            <h2>(ticker, amount, transaction date)</h2>
+            <p id="trans"></p>
+        </div>
+
+    </div>
+    );
+}
+export default Profile;
