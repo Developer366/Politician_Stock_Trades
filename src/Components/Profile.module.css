@@ -1,14 +1,22 @@
 .Profile {
     background-color:cornflowerblue;
     height: auto;
-    width: 50%;
+    width: 100%;
+    text-align:center;
+    border-radius: 30px;
+    box-shadow: 10px 10px 8px #888888;
+    color: white;
+    
 }
 
-.Trades {
-   /* display: none;*/
+img {
+    max-width: 300px;
+    max-height: 300px;
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
 }
 
-.ProImg {
-    max-width: 100%;
-    max-height: 100%;
+table, td {
+    border: 1px solid black;
 }

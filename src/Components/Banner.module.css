@@ -1,10 +1,11 @@
 .banner {
-    border-radius: 20px;
-    width: 95%;
-    max-height: 600px;
-    opacity: 0.8;
+    /* border-radius: 20px; */
+    width: 60%;
+    max-height: 300px;
+    /* opacity: 0.8; */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    filter: sepia(20%);
+    /* filter: sepia(20%); */
+    
 }

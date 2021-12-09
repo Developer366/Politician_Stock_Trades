@@ -1,6 +1,24 @@
+/* the navbar container*/
 .NavBar {
-    background-color: lightblue;
-    text-align: center;
-    margin: 5px 30px;
-    
+	background-color: black;
+	text-align: center;
+	/* margin: 5px 30px; */
+	width: 100%;
+    padding: 30px;
+}
+/* NavBar Links */
+.Link {
+	/* float: right;
+    display:block; */
+	color: white;
+	/* padding: 50px 50px; */
+    padding: 30px 30px;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+/* Links - change color on hover */
+.Link:hover {
+	background-color:lightblue;
+	color: black;
 }
