@@ -1,9 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import About from "../Pages/About.js";
-import Reps from "../Pages/Reps.js";
-import Senators from "../Pages/Senators.js";
+import Reps from "../Pages/Representatives/Reps.js";
+import RepInfo from "../Pages/Representatives/RepInfo.js";
+import Senators from "../Pages/Senators/Senators.js";
+import SenatorInfo from "../Pages/Senators/SenatorInfo.js";
 import ErrorPage from "../Pages/ErrorPage.js";
-import RepInfo from "../Pages/RepInfo.js";
+
 
 import classes from "./NavBar.module.css";
 
@@ -21,11 +23,11 @@ function NavBar() {
 				<Route path="/representatives" element={<Reps />} />
 				<Route path="/representatives/:name" element={<RepInfo />} />
 				<Route path="/senators" element={<Senators />} />
+				<Route path="/senators/:name" element={<SenatorInfo />} />
 				<Route path="*" element={<ErrorPage />} />
 			</Routes>
 		</div>
-	);
-    
+	); 
 }
 
 export default NavBar;

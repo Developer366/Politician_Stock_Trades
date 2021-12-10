@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from "react-router-dom";
 
-import classes from "./RepInfo.module.css"
+import classes from "./RepInfo.module.css";
 
 export default function RepInfo(props) {
     let { name } = useParams();
@@ -24,6 +24,7 @@ export default function RepInfo(props) {
             return new Date(b.transaction_date) - new Date(a.transaction_date);
         }); console.log(sortedMatches)
 
+
         sortedMatches.forEach((match) => {//list matches of chosen rep to html
             let table = document.getElementById("Transactions");
             let row = table.insertRow(-1);//insert reverse order so newest is first 
@@ -38,19 +39,11 @@ export default function RepInfo(props) {
             cell4.innerHTML = `${match.amount}`;
             let cell5 = row.insertCell(4);
             cell5.innerHTML = `${match.asset_description}`;
-
-            // //create a element then add text to new element
-            // var para = document.createElement("P");//creates a paragraph element
-            // let text = `${match.transaction_date} | ${match.ticker} | ${match.amount} | ${match.asset_description} | ${match.type}`;
-            // //para.innerHTML+= match.ticker;
-            // //para.innerHTML+= match.amount;
-            // para.innerHTML= text;
-            // //para.innerHTML+= "ASSTITTIES ASS AND TITTIES"
-            // document.getElementById('trans').appendChild(para);
         });
-        
     }
-    getData(name);
+
+    getData(name);//get api data and insert data into table
+
     return (
         <div>
             <h1>House Representative transactions: { name }</h1>
