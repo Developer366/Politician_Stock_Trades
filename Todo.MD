@@ -11,6 +11,7 @@ COMPLETED:
 1. added a table for Rep transactions
 2. getdata() runs only once
 3. displayed transaction data on a different page using url params
+4. added Lazy Loading to routes
 
 ERRORS:
 
