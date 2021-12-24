@@ -5,11 +5,20 @@ table {
      margin-right: auto;
 }
 th {
-    background-color: green;
+    background-color: rgb(18, 156, 219);
     color: white;
     border: 1px solid red;
+}
+td {
+    border: 1px solid;
 }
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
+    border: 1px solid red;
+}
+
+tr:nth-child(odd) {
+    background-color: #bce2fb8f;
+    border: 1px solid red;
 }

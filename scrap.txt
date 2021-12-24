@@ -2,15 +2,9 @@
 <a href="/representatives">Representatives</a>
 <a href="/senators">Senators</a>
 
-
-
-
-
 import { useState, useEffect } from 'react';
 
 import classes from "./Profile.module.css";
-
-
 
 const url =
 "https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.json";

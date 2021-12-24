@@ -6,7 +6,7 @@ import Banner from "./Components/Banner.js";
 
 function App() {
 	return (
-		<div style={{ backgroundColor: "Chocolate" }}>
+		<div>
 			<Banner />
 			<NavBar />
 		</div>

@@ -1,10 +1,11 @@
 /* the navbar container*/
 .NavBar {
-	background-color: black;
+	background-color: #101010;
 	text-align: center;
 	/* margin: 5px 30px; */
+	/* height: 60px; */
 	width: 100%;
-    /* padding: 10px; */
+    padding: 30px;
 }
 /* NavBar Links */
 .Link {
@@ -19,6 +20,7 @@
 
 /* Links - change color on hover */
 .Link:hover {
-	background-color:lightblue;
+	background-color: lightblue;
 	color: black;
+	padding: 30px;
 }

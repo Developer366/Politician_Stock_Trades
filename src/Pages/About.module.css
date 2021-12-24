@@ -1,0 +1,15 @@
+.About {
+    padding: 40px;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    /* font-size: 2em; */
+}
+h1 {
+    text-align: center;
+}
+p {
+    font-size: 25px;
+}
+hr {
+    border: 5px solid;
+    border-radius: 10px;
+}
