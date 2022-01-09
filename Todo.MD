@@ -5,7 +5,7 @@ TODO:
 3. think of a good way to display the list of transactions (modal/ box below)
 4. make getdata() function not run twice when page loads
 5. learn about hooks and useState and useEffect()
-6. Make a hamburger menu for mobile 
+6. Make a hamburger menu for mobile
 
 COMPLETED:
 
@@ -13,7 +13,13 @@ COMPLETED:
 2. getdata() runs only once
 3. displayed transaction data on a different page using url params
 4. added Lazy Loading to routes
+5. made table scrollable with overflow-x
 
 ERRORS:
 
 1. Uncaught Error: Expected `onClick` listener to be a function, instead got a value of `object` type.
+
+Instructions:
+
+-npm run build
+-firebase deploy

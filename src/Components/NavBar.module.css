@@ -2,10 +2,24 @@
 .NavBar {
 	background-color: #101010;
 	text-align: center;
+	
+	/* position:fixed; */
 	/* margin: 5px 30px; */
 	/* height: 60px; */
 	width: 100%;
-    padding: 30px;
+	/* padding: 30px; */
+	overflow: hidden;
+}
+/* unordered list containing Links  */
+.List {
+	/* list-style-type: none; */
+    background: linear-gradient(45deg, rgb(156, 14, 156), rgb(66, 66, 231));
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+	padding: 0;
 }
 /* NavBar Links */
 .Link {
@@ -13,14 +27,68 @@
     display:block; */
 	color: white;
 	/* padding: 50px 50px; */
-    padding: 30px 30px;
-	font-size: 30px;
+	padding: 30px 30px;
+	/* font-size: 30px; */
+	font: size 10vw;
 	text-decoration: none;
+	/* display: block; */
 }
-
-/* Links - change color on hover */
 .Link:hover {
 	background-color: lightblue;
 	color: black;
 	padding: 30px;
+}
+
+
+.btn {
+	display: none;
+    /* position: absolute;
+    right: 10px;
+    top: 7px; */
+	margin: 10px;
+    padding: 5px;
+    color: #000;
+    font-size: 18px;
+}
+
+/* Container that containes the hamburger bars
+.Container {
+	display: block;
+	cursor: pointer;
+	float: left;
+}
+/* 3 Hamburger bars to make a hamburger */
+/* .Hamburger {
+	width: 30px;
+	height: 5px;
+	background-color: white;
+	margin: 6px 0;
+	transition: 0.4s;
+	display: none;
+} */ 
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+	.List {
+		flex-direction: column;
+		height: auto;
+	}
+	.Link {
+		/* display: none; */
+		text-align: center;
+		flex-direction: column;
+        height: auto;
+	}
+	
+	.btn {
+		display: block;
+	}
+	/* .Hamburger {
+		display: block;
+	} */
+
+	/* .NavBar {
+		flex-direction: column;
+	} */
+	
 }

@@ -48,15 +48,17 @@ export default function RepInfo(props) {
         <div>
             <h1>House Representative transactions: { name }</h1>
             <Link to={'/representatives'}>Back to represetnatives</Link>
-            <table id="Transactions">
-                <tr>
-                    <th>Transaction Date</th>
-                    <th>Ticker</th>
-                    <th>Transaction Type</th>
-                    <th>Amount</th>
-                    <th>Asset Description</th>
-                </tr>
-            </table>
+            <div className={classes.overflow}>
+                <table id="Transactions">
+                    <tr>
+                        <th>Transaction Date</th>
+                        <th>Ticker</th>
+                        <th>Transaction Type</th>
+                        <th>Amount</th>
+                        <th>Asset Description</th>
+                    </tr>
+                </table>
+            </div>
         </div>
     )
 }

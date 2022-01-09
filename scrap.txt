@@ -63,3 +63,31 @@ function Profile (props) {
     );
 }
 export default Profile;
+
+
+
+
+
+
+
+
+	{/* onClick={NavToggler} */}
+					
+					{/* Hamburger Icon Menu  */}
+					{/* <div id="Hamburger" onClick={NavBarToggle} className={classes.Container}>
+						<div className={classes.Hamburger}></div>
+						<div className={classes.Hamburger}></div>
+						<div className={classes.Hamburger}></div>
+					</div> */}
+
+
+
+
+// <button onClick={() => setShowLinks(!showLinks)}><ReorderIcon/></button>
+						//onClick={() => setShowLinks(!showLinks)}
+
+
+
+
+
+

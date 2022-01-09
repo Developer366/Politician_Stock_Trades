@@ -13,10 +13,10 @@ function Rep (props) {//Display Representative img and info
                 <p>Party: {props.party}</p>
                 <p>Job: {props.position}</p>
                 <p>Time in office: {props.time}</p>
-                <p>Salary: {props.salary}</p>
+                {/* <p>Salary: {props.salary}</p> */}
                 <p>Net Worth: {props.networth}</p>
 
-                <Link to={`/representatives/${props.name}`}>View Transactions</Link>
+                <Link className={classes.ViewLink} to={`/representatives/${props.name}`}>View Transactions</Link>
             </div>
         </div>
     );

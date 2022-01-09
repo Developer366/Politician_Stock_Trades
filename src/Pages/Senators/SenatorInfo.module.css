@@ -21,3 +21,8 @@ tr:nth-child(odd) {
     background-color: #bce2fb8f;
     border: 1px solid red;
 }
+
+.overflow {
+	overflow-x: scroll;
+	/* overflow-y: scroll; */
+}

@@ -1,24 +1,30 @@
 table {
-    border-collapse:collapse;
-    border: 1px solid black;
-    margin-left: auto;
-     margin-right: auto;
+	border-collapse: collapse;
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-x: auto;
 }
 th {
-    background-color: rgb(18, 156, 219);
-    color: white;
-    border: 1px solid red;
+	background-color: rgb(18, 156, 219);
+	color: white;
+	border: 1px solid red;
 }
 td {
-    border: 1px solid;
+	border: 1px solid;
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
-    border: 1px solid red;
+	background-color: #f2f2f2;
+	border: 1px solid red;
 }
 
 tr:nth-child(odd) {
-    background-color: #bce2fb8f;
-    border: 1px solid red;
+	background-color: #bce2fb8f;
+	border: 1px solid red;
+}
+
+.overflow {
+	overflow-x: scroll;
+	/* overflow-y: scroll; */
 }

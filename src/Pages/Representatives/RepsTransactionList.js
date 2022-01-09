@@ -24,8 +24,9 @@ export default function RepsTransactionList() {
             return new Date(b.transaction_date) - new Date(a.transaction_date);
         }); console.log(sortedMatches)
 
-
-        sortedMatches.forEach((match) => {//list matches of chosen rep to html
+        for (let i=0; i < 400; i++ ) {
+        //sortedMatches.forEach((match) => {//list matches of chosen rep to html
+            let match = sortedMatches[i];
             let table = document.getElementById("Transactions");
             let row = table.insertRow(-1);//insert reverse order so newest is first 
 
@@ -47,8 +48,9 @@ export default function RepsTransactionList() {
             let cell6 = row.insertCell(5);
             cell6.innerHTML = `${match.asset_description}`;
 
-        });
-    }
+       // });
+        }
+    }//end of async function
 
     getData();//get api data and insert data into table
 
@@ -56,16 +58,18 @@ export default function RepsTransactionList() {
         <div>
             <h1>House Representative transactions: </h1>
             {/* <Link to={'/representatives'}>Back to represetnatives</Link> */}
-            <table id="Transactions">
-                <tr>
-                    <th>Transaction Date</th>
-                    <th>Rep</th>
-                    <th>Ticker</th>
-                    <th>Transaction Type</th>
-                    <th>Amount</th>
-                    <th>Asset Description</th>
-                </tr>
-            </table>
+            <div className={classes.overflow}>
+                <table id="Transactions">
+                    <tr>
+                        <th>Transaction Date</th>
+                        <th>Rep</th>
+                        <th>Ticker</th>
+                        <th>Transaction Type</th>
+                        <th>Amount</th>
+                        <th>Asset Description</th>
+                    </tr>
+                </table>
+            </div>
         </div>
     )
 }

@@ -50,15 +50,17 @@ export default function RepInfo(props) {
         <div>
             {/* <h1>Senator transactions: { name }</h1> */}
             <Link to={'/senators'}>Back to senators</Link>
-            <table id="Transactions">
-                <tr>
-                    <th>Transaction Date</th>
-                    <th>Ticker</th>
-                    <th>Transaction Type</th>
-                    <th>Amount</th>
-                    <th>Asset Description</th>
-                </tr>
-            </table>
+            <div className={classes.overflow}>
+                <table id="Transactions">
+                    <tr>
+                        <th>Transaction Date</th>
+                        <th>Ticker</th>
+                        <th>Transaction Type</th>
+                        <th>Amount</th>
+                        <th>Asset Description</th>
+                    </tr>
+                </table>
+            </div>
         </div>
     )
 }

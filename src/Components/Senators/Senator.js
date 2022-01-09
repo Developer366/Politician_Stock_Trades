@@ -13,10 +13,14 @@ export default function Senator(props) {
 				<p>Party: {props.party}</p>
 				<p>Job: {props.position}</p>
 				<p>Time in office: {props.time}</p>
-				<p>Salary: {props.salary}</p>
+				{/* <p>Salary: {props.salary}</p> */}
 				<p>Net Worth: {props.networth}</p>
-				<Link to={`/senators/${props.name}`}>View Transactions</Link>
-
+				<Link
+					className={classes.ViewLink}
+					to={`/senators/${props.name}`}
+				>
+					View Transactions
+				</Link>
 			</div>
 		</div>
 	);

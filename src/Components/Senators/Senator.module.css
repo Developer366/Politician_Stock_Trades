@@ -17,3 +17,19 @@
 	margin-right: auto;
 	border-radius: 30px;
 }
+
+.ViewLink {
+	background-color: #2db3a7d7;
+	color: white;
+	/* padding: 14px 25px; */
+	padding: 15px;
+	margin-bottom: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 20px;
+}
+
+.ViewLink:hover {
+	background-color: red;
+}
